@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +34,6 @@ body{
 }
 
 /* Animated AI Background */
-
 .ai{
     position:absolute;
     color:rgba(255,255,255,0.08);
@@ -45,66 +43,29 @@ body{
     animation:float 18s infinite linear;
 }
 
-.ai:nth-child(1){
-    top:10%;
-    left:5%;
-    font-size:42px;
-}
-
-.ai:nth-child(2){
-    top:18%;
-    right:8%;
-    font-size:30px;
-}
-
-.ai:nth-child(3){
-    bottom:15%;
-    left:10%;
-    font-size:28px;
-}
-
-.ai:nth-child(4){
-    bottom:10%;
-    right:12%;
-    font-size:34px;
-}
-
-.ai:nth-child(5){
-    top:50%;
-    left:50%;
-    font-size:24px;
-}
+.ai:nth-child(1){ top:10%; left:5%; font-size:42px; }
+.ai:nth-child(2){ top:18%; right:8%; font-size:30px; }
+.ai:nth-child(3){ bottom:15%; left:10%; font-size:28px; }
+.ai:nth-child(4){ bottom:10%; right:12%; font-size:34px; }
+.ai:nth-child(5){ top:50%; left:50%; font-size:24px; }
 
 @keyframes float{
-    0%{
-        transform:translateY(0px) rotate(0deg);
-    }
-    50%{
-        transform:translateY(-25px) rotate(180deg);
-    }
-    100%{
-        transform:translateY(0px) rotate(360deg);
-    }
+    0%{ transform:translateY(0px) rotate(0deg); }
+    50%{ transform:translateY(-25px) rotate(180deg); }
+    100%{ transform:translateY(0px) rotate(360deg); }
 }
 
 .container{
     width:100%;
     max-width:600px;
-
     background:rgba(15,23,42,0.90);
-
     backdrop-filter:blur(20px);
-
     border:1px solid rgba(255,255,255,0.15);
-
     border-radius:20px;
-
     padding:30px;
-
     box-shadow:
     0 0 25px rgba(99,102,241,0.5),
     0 0 60px rgba(59,130,246,0.3);
-
     position:relative;
     z-index:10;
 }
@@ -180,10 +141,8 @@ input:focus{
 .confirm-box{
     margin-top:15px;
     margin-bottom:20px;
-
     background:#0f172a;
     border:1px solid #334155;
-
     border-radius:10px;
     padding:15px;
 }
@@ -208,23 +167,13 @@ input:focus{
 button{
     width:100%;
     padding:14px;
-
     border:none;
     border-radius:10px;
-
-    background:
-    linear-gradient(
-        90deg,
-        #06b6d4,
-        #3b82f6,
-        #4f46e5
-    );
-
+    background: linear-gradient(90deg, #06b6d4, #3b82f6, #4f46e5);
     color:white;
     font-size:16px;
     font-weight:bold;
     cursor:pointer;
-
     transition:0.3s;
 }
 
@@ -235,24 +184,16 @@ button:hover{
 
 .success{
     display:none;
-
     max-width:600px;
     width:100%;
-
     background:rgba(15,23,42,0.95);
-
     border:1px solid #22c55e;
-
     border-radius:20px;
-
     padding:35px;
-
     text-align:center;
-
     box-shadow:0 0 25px rgba(34,197,94,0.5);
 }
-```
-```html
+
 .success h2{
     color:#22c55e;
     margin-bottom:15px;
@@ -268,21 +209,14 @@ button:hover{
     align-items:center;
     justify-content:center;
     gap:10px;
-
     margin-top:15px;
-
     padding:14px 24px;
-
     background:#25D366;
-
     color:white;
     text-decoration:none;
-
     border-radius:12px;
-
     font-weight:bold;
     font-size:15px;
-
     transition:0.3s;
 }
 
@@ -308,146 +242,80 @@ button:hover{
 
 <div class="container" id="formContainer">
 
-<div class="header">
+    <div class="header">
+        <div class="badge">📅 22 June 2026</div>
+        <h1>🤖 Artificial Intelligence Awareness Workshop</h1>
+        <p class="subtitle">Discover the Future of AI, Machine Learning and Emerging Technologies</p>
+    </div>
 
-<div class="badge">
-📅 22 June 2026
-</div>
+    <div class="speaker-box">
+        <h3>🎤 Featured Speakers</h3>
+        <div class="speaker">
+            <strong>Speaker 1:</strong><br>
+            Prof. Madya Ts. Dr. Nik Adilah Hanin binti Zahri
+        </div>
+        <div class="speaker">
+            <strong>Speaker 2:</strong><br>
+            Ir. Dr. Marni Azira binti Makrom
+        </div>
+    </div>
 
-<h1>🤖 Artificial Intelligence Awareness Workshop</h1>
+    <form
+    action="[https://docs.google.com/forms/d/e/1FAIpQLSf92lyYXBTls6PM8152f_dSJBrmTx8mkPwPmTMRCkhNglUvjg/formResponse](https://docs.google.com/forms/d/e/1FAIpQLSf92lyYXBTls6PM8152f_dSJBrmTx8mkPwPmTMRCkhNglUvjg/formResponse)"
+    method="POST"
+    target="hidden_iframe"
+    onsubmit="handleSubmit();">
 
-<p class="subtitle">
-Discover the Future of AI, Machine Learning and Emerging Technologies
-</p>
+        <label>Student's Email</label>
+        <input type="email" name="entry.335986065" required>
 
-</div>
+        <label>Student's Name</label>
+        <input type="text" name="entry.46450270" required>
 
-<div class="speaker-box">
+        <label>Matric Number</label>
+        <input type="text" name="entry.1072332366" required>
 
-<h3>🎤 Featured Speakers</h3>
+        <label>Phone Number</label>
+        <input type="text" name="entry.157897770" required>
 
-<div class="speaker">
-<strong>Speaker 1:</strong><br>
-Prof. Madya Ts. Dr. Nik Adilah Hanin binti Zahri
-</div>
+        <label>Academic Program & Year</label>
+        <input type="text" name="entry.1234478327" placeholder="Example: Computer Engineering - Y3" required>
 
-<div class="speaker">
-<strong>Speaker 2:</strong><br>
-Ir. Dr. Marni Azira binti Makrom
-</div>
+        <div class="confirm-box">
+            <p>Your registration serves as your confirmation and commitment to attend this workshop.</p>
+            <label>
+                <input type="radio" name="entry.150019988" value="I CONFIRM" required>
+                I CONFIRM
+            </label>
+        </div>
 
-</div>
-
-<form
-action="https://docs.google.com/forms/d/e/1FAIpQLSf92lyYXBTls6PM8152f_dSJBrmTx8mkPwPmTMRCkhNglUvjg/formResponse"
-method="POST"
-target="hidden_iframe"
-onsubmit="handleSubmit();">
-
-<label>Student's Email</label>
-<input
-type="email"
-name="entry.335986065"
-required>
-
-<label>Student's Name</label>
-<input
-type="text"
-name="entry.46450270"
-required>
-
-<label>Matric Number</label>
-<input
-type="text"
-name="entry.1072332366"
-required>
-
-<label>Phone Number</label>
-<input
-type="text"
-name="entry.157897770"
-required>
-
-<label>Academic Program & Year</label>
-<input
-type="text"
-name="entry.1234478327"
-placeholder="Example: Computer Engineering - Y3"
-required>
-```
-```html
-<div class="confirm-box">
-
-<p>
-Your registration serves as your confirmation and commitment to attend this workshop.
-</p>
-
-<label>
-
-<input
-type="radio"
-name="entry.150019988"
-value="I CONFIRM"
-required>
-
-I CONFIRM
-
-</label>
-
-</div>
-
-<button type="submit">
-🚀 REGISTER NOW
-</button>
-
-</form>
-
+        <button type="submit">🚀 REGISTER NOW</button>
+    </form>
 </div>
 
 <div class="success" id="successMsg">
+    <h2>✅ Registration Submitted Successfully!</h2>
+    <p>Thank you for registering for the Artificial Intelligence Awareness Workshop.</p>
+    <p>Please join the official WhatsApp group:</p>
 
-<h2>✅ Registration Submitted Successfully!</h2>
-
-<p>
-Thank you for registering for the Artificial Intelligence Awareness Workshop.
-</p>
-
-<p>
-Please join the official WhatsApp group:
-</p>
-
-<a
-href="https://chat.whatsapp.com/BgaERvakQ1JD4jbLmnhO4N?s=sw&p=a&mlu=4"
-target="_blank"
-class="whatsapp-btn">
-
-<svg xmlns="http://www.w3.org/2000/svg"
-viewBox="0 0 24 24"
-fill="currentColor">
-
-<path d="M20.52 3.48A11.82 11.82 0 0 0 12.07 0C5.5 0 .17 5.33.17 11.9c0 2.1.55 4.15 1.59 5.95L0 24l6.33-1.66a11.86 11.86 0 0 0 5.74 1.46h.01c6.57 0 11.9-5.33 11.9-11.9 0-3.18-1.24-6.17-3.46-8.42z"/>
-</svg>
-
-Join WhatsApp Group
-
-</a>
-
+    <a href="[https://chat.whatsapp.com/BgaERvakQ1JD4jbLmnhO4N?s=sw&p=a&mlu=4](https://chat.whatsapp.com/BgaERvakQ1JD4jbLmnhO4N?s=sw&p=a&mlu=4)" target="_blank" class="whatsapp-btn">
+        <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.52 3.48A11.82 11.82 0 0 0 12.07 0C5.5 0 .17 5.33.17 11.9c0 2.1.55 4.15 1.59 5.95L0 24l6.33-1.66a11.86 11.86 0 0 0 5.74 1.46h.01c6.57 0 11.9-5.33 11.9-11.9 0-3.18-1.24-6.17-3.46-8.42z"/>
+        </svg>
+        Join WhatsApp Group
+    </a>
 </div>
 
-<iframe
-name="hidden_iframe"
-id="hidden_iframe"
-style="display:none;">
-</iframe>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
 
 <script>
-
-<form
-action="https://docs.google.com/forms/d/e/1FAIpQLSf92lyYXBTls6PM8152f_dSJBrmTx8mkPwPmTMRCkhNglUvjg/formResponse"
-method="POST">
-
+function handleSubmit() {
+    // Hide the registration form container
+    document.getElementById('formContainer').style.display = 'none';
+    // Show the WhatsApp group success box
+    document.getElementById('successMsg').style.display = 'block';
+}
 </script>
 
 </body>
 </html>
-```
