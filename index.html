@@ -251,7 +251,8 @@ button:hover{
 
     box-shadow:0 0 25px rgba(34,197,94,0.5);
 }
-
+```
+```html
 .success h2{
     color:#22c55e;
     margin-bottom:15px;
@@ -262,18 +263,37 @@ button:hover{
     margin-bottom:15px;
 }
 
-.success a{
-    display:inline-block;
-    padding:12px 24px;
-    border-radius:10px;
-    background:#22c55e;
+.whatsapp-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    margin-top:15px;
+
+    padding:14px 24px;
+
+    background:#25D366;
+
     color:white;
     text-decoration:none;
+
+    border-radius:12px;
+
     font-weight:bold;
+    font-size:15px;
+
+    transition:0.3s;
 }
 
-.success a:hover{
-    background:#16a34a;
+.whatsapp-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 25px rgba(37,211,102,0.6);
+}
+
+.whatsapp-btn svg{
+    width:22px;
+    height:22px;
 }
 </style>
 </head>
@@ -289,30 +309,32 @@ button:hover{
 <div class="container" id="formContainer">
 
 <div class="header">
-    <div class="badge">
-        📅 22 June 2026
-    </div>
 
-    <h1>🤖 Artificial Intelligence Awareness Workshop</h1>
+<div class="badge">
+📅 22 June 2026
+</div>
 
-    <p class="subtitle">
-        Discover the Future of AI, Machine Learning and Emerging Technologies
-    </p>
+<h1>🤖 Artificial Intelligence Awareness Workshop</h1>
+
+<p class="subtitle">
+Discover the Future of AI, Machine Learning and Emerging Technologies
+</p>
+
 </div>
 
 <div class="speaker-box">
 
-    <h3>🎤 Featured Speakers</h3>
+<h3>🎤 Featured Speakers</h3>
 
-    <div class="speaker">
-        <strong>Speaker 1:</strong><br>
-        Prof. Madya Ts. Dr. Nik Adilah Hanin binti Zahri
-    </div>
+<div class="speaker">
+<strong>Speaker 1:</strong><br>
+Prof. Madya Ts. Dr. Nik Adilah Hanin binti Zahri
+</div>
 
-    <div class="speaker">
-        <strong>Speaker 2:</strong><br>
-        Ir. Dr. Marni Azira binti Makrom
-    </div>
+<div class="speaker">
+<strong>Speaker 2:</strong><br>
+Ir. Dr. Marni Azira binti Makrom
+</div>
 
 </div>
 
@@ -352,7 +374,8 @@ type="text"
 name="entry.1234478327"
 placeholder="Example: Computer Engineering - Y3"
 required>
-
+```
+```html
 <div class="confirm-box">
 
 <p>
@@ -360,6 +383,7 @@ Your registration serves as your confirmation and commitment to attend this work
 </p>
 
 <label>
+
 <input
 type="radio"
 name="entry.150019988"
@@ -367,6 +391,7 @@ value="I CONFIRM"
 required>
 
 I CONFIRM
+
 </label>
 
 </div>
@@ -384,8 +409,7 @@ I CONFIRM
 <h2>✅ Registration Submitted Successfully!</h2>
 
 <p>
-Thank you for registering for the
-Artificial Intelligence Awareness Workshop.
+Thank you for registering for the Artificial Intelligence Awareness Workshop.
 </p>
 
 <p>
@@ -393,9 +417,19 @@ Please join the official WhatsApp group:
 </p>
 
 <a
-href="https://chat.whatsapp.com/KxwJYBU2rfgCTgB3YpiGGL"
-target="_blank">
+href="https://chat.whatsapp.com/BgaERvakQ1JD4jbLmnhO4N?s=sw&p=a&mlu=4"
+target="_blank"
+class="whatsapp-btn">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 24 24"
+fill="currentColor">
+
+<path d="M20.52 3.48A11.82 11.82 0 0 0 12.07 0C5.5 0 .17 5.33.17 11.9c0 2.1.55 4.15 1.59 5.95L0 24l6.33-1.66a11.86 11.86 0 0 0 5.74 1.46h.01c6.57 0 11.9-5.33 11.9-11.9 0-3.18-1.24-6.17-3.46-8.42z"/>
+</svg>
+
 Join WhatsApp Group
+
 </a>
 
 </div>
@@ -410,11 +444,11 @@ style="display:none;">
 
 function handleSubmit()
 {
-    document.getElementById("formContainer").style.display = "none";
+    document.getElementById("formContainer").style.display="none";
 
     setTimeout(function()
     {
-        document.getElementById("successMsg").style.display = "block";
+        document.getElementById("successMsg").style.display="block";
     },1000);
 }
 
